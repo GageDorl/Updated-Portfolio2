@@ -60,9 +60,9 @@ function NoMatch() {
         </div>
       </div>
       <div style={{textAlign:"center"}}>
-        <img src={process.env.PUBLIC_URL+"/assets/images/insta.png"} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
-        <img src={process.env.PUBLIC_URL+"/assets/images/linkedin.png"} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
-        <img src={process.env.PUBLIC_URL+"/assets/images/github.png"} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
+        <img src={"../images/insta.png"} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
+        <img src={"../images/linkedin.png"} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
+        <img src={"../images/github.png"} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
       </div>
     </Container>
   );
