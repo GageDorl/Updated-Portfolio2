@@ -21,5 +21,6 @@ router.post("/api/contact",(req,res)=>{
 router.get("/api/contact",(req,res)=>{
     return res.send("Hi")
 })
+// path to the static react build directory    
 
 module.exports = router;
