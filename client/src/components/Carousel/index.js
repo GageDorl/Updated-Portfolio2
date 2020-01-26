@@ -15,7 +15,7 @@ let slides = [
   },
   {
     key: uuidv4(),
-    content: <img src={process.env.PUBLIC_URL+"/assets/images/chemconnect.png"} alt="2" />,
+    content: <img src={process.env.PUBLIC_URL+"/assets/images/ChemConnect.png"} alt="2" />,
     title:"Chem Connect",
     summary: "Chem Connect was a project I did or my chemistry class. I had to have a vaguely chemistry themed social media and this was the result",
     linktoRepo:"https://github.com/gagedorl/ChemConnnect",
