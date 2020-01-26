@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import uuidv4 from "uuid";
 import { config } from "react-spring";
-import "./style.css"
+import "./style.scss"
 
 let slides = [
   {
@@ -58,8 +58,7 @@ let slides = [
     content: <img src={process.env.PUBLIC_URL+"/assets/images/Hangman-Again.png"} alt="7" />,
     title:"Hangman (Again)",
     summary:"This is a node command line version of hangman. You run it in the console and try to guess the word that it has. All the words are technologies that were used in the project.",
-    linktoRepo:"https://github.com/gagedorl/hangman-again",
-    linktoDeployed:"https://gagedorl.github.io/hangman-again"
+    linktoRepo:"https://github.com/gagedorl/hangman-again"
   },
   {
     key: uuidv4(),
@@ -99,7 +98,14 @@ let slides = [
     summary:"Word Guess Game is basically just hangman, I happened to theme it towards minecraft because I was playing a lot of minecraft around then.",
     linktoRepo:"https://github.com/GageDorl/Word-Guess-Game",
     linktoDeployed:"https://gagedorl.github.io/Word-Guess-Game"
-  }
+  },
+ {
+    key:uuidv4(),
+    content:<img src={process.env.PUBLIC_URL+"/assets/images/highschool.png"} alt="13" />,
+    title:"My Highschool Website",
+    summary:"My very first website (techincally like my third because my first two got blokced, but they were just early versions of this one). This is what started me wanting to make websites for a career. I used frames to make it because that is what we were taught in my web master class, now I know how that is seen as old bad practise but it was pretty useful for what I was doing.",
+    linktoDeployed:"http://gagegames.dorlandoelectrical.com/gagegames"
+ }
 ];
 let orThing = " |  ";
 export default class Example extends Component {
@@ -127,9 +133,9 @@ export default class Example extends Component {
   render() {
     return (
         <div>
-        <button onClick={()=>this.changeSlideDown()} className="lefty"></button>
-        <button onClick={()=>this.changeSlideUp()} className="righty"></button>
-      <div style={{ width: "80%", height: "500px", margin: "0 auto" }} className="behind">
+        <div onClick={()=>this.changeSlideDown()} className="arrow arrow--left lefty"><span></span></div>
+        <div onClick={()=>this.changeSlideUp()} className="arrow arrow--right righty"><span></span></div>
+      <div style={{ width: "80%",height:window.innerHeight>window.innerWidth?"200px":"500px", margin: "0 auto" }} className="behind">
         <Carousel
           slides={slides}
           goToSlide={this.state.goToSlide}

@@ -17,7 +17,7 @@ function Nav() {
             <div className="navbar-nav">
           <NavLink exact to="/" className="nav-link" activeClassName="hidden">Home</NavLink>
           <NavLink exact to="/projects" className="nav-link" activeClassName="hidden">Projects</NavLink>
-          <NavLink exact to="/links" className="nav-link" activeClassName="hidden">Links</NavLink>
+          <NavLink exact to="/contact" className="nav-link" activeClassName="hidden">Contact Me</NavLink>
           </div>       
         
       </div>

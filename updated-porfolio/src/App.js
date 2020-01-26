@@ -4,7 +4,7 @@ import './App.css';
 import Nav from "./components/Nav";
 import Overview from "./pages/Overview";
 import Projects from "./pages/Projects";
-import Links from "./pages/Links";
+import Contact from "./pages/Contact";
 import NoMatch  from "./pages/404";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Overview} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="/links" component={Links} />
+          <Route exact path="/contact" component={Contact} />
           <Route component={NoMatch} />
         </Switch>
       </div>
