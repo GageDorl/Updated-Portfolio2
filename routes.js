@@ -9,7 +9,7 @@ let transporter = nodemailer.createTransport({
     }
   })    
 
-router.post("/api/contact",(req,res)=>{
+router.post("/contact",(req,res)=>{
     transporter.sendMail(req.body, (error,info)=>{
         if(error) console.log(error);
         else{
@@ -18,7 +18,7 @@ router.post("/api/contact",(req,res)=>{
         }
       })
 })
-router.get("/api/contact",(req,res)=>{
+router.get("/contact",(req,res)=>{
     return res.send("Hi")
 })
 
