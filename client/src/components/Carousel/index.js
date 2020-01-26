@@ -7,7 +7,7 @@ import "./style.scss"
 let slides = [
   {
     key: uuidv4(),
-    content: <img src={process.env.PUBLIC_URL+"/assets/images/clicky.png"} alt="1" />,
+    content: <img src={process.env.PUBLIC_URL+"/assets/images/Clicky.png"} alt="1" />,
     title:"Clicky Game",
     summary: "This is a game where you have to try not to click the same picture twice in the same game while making it through every picture. They do get shuffled as you click to make it have a challange.",
     linktoRepo:"https://github.com/gagedorl/clicky",
@@ -18,7 +18,7 @@ let slides = [
     content: <img src={process.env.PUBLIC_URL+"/assets/images/chemconnect.png"} alt="2" />,
     title:"Chem Connect",
     summary: "Chem Connect was a project I did or my chemistry class. I had to have a vaguely chemistry themed social media and this was the result",
-    linktoRepo:"https://github.com/gagedorl/chemconnnect",
+    linktoRepo:"https://github.com/gagedorl/ChemConnnect",
     linktoDeployed:"https://chemconnect.herokuapp.com"
   },
   {
@@ -26,8 +26,8 @@ let slides = [
     content: <img src={process.env.PUBLIC_URL+"/assets/images/burger.png"} alt="3" />,
     title:"Burger-Vore",
     summary: "In \"Burger-Vore\" you can add burgers and click a button to say you have devoured them. The challenge of this was that it was made with handlebars which can be interesting to work with.",
-    linktoRepo:"https://github.com/gagedorl/chemconnnect",
-    linktoDeployed:"https://chemconnect.herokuapp.com"
+    linktoRepo:"https://github.com/gagedorl/burger",
+    linktoDeployed:"https://burger-vore.herokuapp.com"
   },
   {
     key: uuidv4(),
@@ -39,7 +39,7 @@ let slides = [
   },
   {
     key: uuidv4(),
-    content: <img src={process.env.PUBLIC_URL+"/assets/images/fudge-it-budget.png"} alt="5" />,
+    content: <img src={process.env.PUBLIC_URL+"/assets/images/Fudge-it-budget.png"} alt="5" />,
     title:"Fudge-it Budget",
     summary: "Fudge it Budget was the first  project of the class. It was a very basic Budgeting tool for people who need to learn to budget their money.",
     linktoRepo:"https://github.com/gagedorl/fudge-it-budget",
@@ -101,7 +101,7 @@ let slides = [
   },
  {
     key:uuidv4(),
-    content:<img src={process.env.PUBLIC_URL+"/assets/images/highschool.png"} alt="13" />,
+    content:<img src={process.env.PUBLIC_URL+"/assets/images/Highschool.png"} alt="13" />,
     title:"My Highschool Website",
     summary:"My very first website (techincally like my third because my first two got blokced, but they were just early versions of this one). This is what started me wanting to make websites for a career. I used frames to make it because that is what we were taught in my web master class, now I know how that is seen as old bad practise but it was pretty useful for what I was doing.",
     linktoDeployed:"http://gagegames.dorlandoelectrical.com/gagegames"
