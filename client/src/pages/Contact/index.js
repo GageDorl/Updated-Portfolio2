@@ -3,9 +3,9 @@ import { Col, Row, Container } from "../../components/Grid";
 import axios from "axios";
 import "./style.css"
 import ReCAPTCHA from "react-google-recaptcha";
-import insta from "../images/insta";
-import linkedin from "../images/linkedin";
-import github from "../images/github";
+import insta from "../images/insta.png";
+import linkedin from "../images/linkedin.png";
+import github from "../images/github.png";
 
 
 let mailer = ()=>{

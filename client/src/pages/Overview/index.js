@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import "./style.css";
-import profilepic from "../images/profilepic"
+import profilepic from "../images/profilepic.jpg"
 
 function NoMatch() {
   return (
