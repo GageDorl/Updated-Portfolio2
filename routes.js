@@ -8,7 +8,7 @@ let transporter = nodemailer.createTransport({
       pass:'GageSpdr2001'
     }
   })    
-
+ 
 router.post("/api/contact",(req,res)=>{
     transporter.sendMail(req.body, (error,info)=>{
         if(error) console.log(error);
@@ -21,5 +21,7 @@ router.post("/api/contact",(req,res)=>{
 router.get("/api/contact",(req,res)=>{
     return res.send("Hi")
 })
-
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 module.exports = router;
