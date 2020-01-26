@@ -10,7 +10,7 @@ let mailer = ()=>{
     alert("Please Fill Out all Fields")
   }
   else{
-  axios.post("/contact", {
+  axios.post("/api/contact", {
     from:"dorlandotech@gmail.com",
     to:"gagedorlando@gmail.com",
     subject:document.getElementById("subject").value,

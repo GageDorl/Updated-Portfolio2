@@ -1,9 +1,0 @@
-.hidden{
-    display:none;
-}
-.bg-blue{
-    background-color: #ffc107;
-    -webkit-box-shadow: 0px 3px 54px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 3px 54px 5px rgba(0,0,0,0.75);
-    box-shadow: 0px 3px 54px 5px rgba(0,0,0,0.75);
-}

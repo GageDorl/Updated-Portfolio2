@@ -1,6 +1,6 @@
 {
   "name": "updated-porfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "server.js",
   "dependencies": {
     "axios": "^0.19.2",
@@ -12,11 +12,10 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'updated-porfolio/*'\" \"npm run client\"",
-    "client": "cd updated-porfolio && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd updated-porfolio && npm install",
-    "build": "cd updated-porfolio && npm run build",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
