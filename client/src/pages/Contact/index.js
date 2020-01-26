@@ -3,6 +3,9 @@ import { Col, Row, Container } from "../../components/Grid";
 import axios from "axios";
 import "./style.css"
 import ReCAPTCHA from "react-google-recaptcha";
+import insta from "../images/insta";
+import linkedin from "../images/linkedin";
+import github from "../images/github";
 
 
 let mailer = ()=>{
@@ -60,9 +63,9 @@ function NoMatch() {
         </div>
       </div>
       <div style={{textAlign:"center"}}>
-        <img src={"../images/insta.png"} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
-        <img src={"../images/linkedin.png"} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
-        <img src={"../images/github.png"} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
+        <img src={insta} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
+        <img src={linkedin} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
+        <img src={github} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
       </div>
     </Container>
   );
