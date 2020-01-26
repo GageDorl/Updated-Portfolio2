@@ -28,3 +28,6 @@ label{
 .card{
     background-color: orange;
 }
+.icon{
+    cursor: pointer;
+}
