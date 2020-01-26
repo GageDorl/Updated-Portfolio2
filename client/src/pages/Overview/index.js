@@ -1,14 +1,13 @@
 import React from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import "./style.css";
-import profilepic from "../images/profilepic.jpg"
 
 function NoMatch() {
   return (
     <Container fluid>
       <Row>
         <Col size="md-12">
-           <h1>About Gage</h1><img src={profilepic} alt="Just a shot of myself" id="ProfPic"/>
+           <h1>About Gage</h1><img src={process.env.PUBLIC_URL+"assets/images/profilepic.jpg"} alt="Just a shot of myself" id="ProfPic"/>
            <p>My name is Gage D'Orlando and I am 18 years old, and looking to get a job in Web Development.</p>
            <p>I have been making website since around mid to late 2018. I started off taking a Web Master class in my highschool and they happened to really crack down on blocking the gaming websites at the same time.
                I was pretty frustrated with this because I usually finished my work pretty fast and wanted to have something fun to do while I waited for whatever was coming next. Because of this I took it upon myself to make a new good gaming site for highschools.

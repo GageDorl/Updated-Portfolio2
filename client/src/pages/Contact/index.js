@@ -3,9 +3,6 @@ import { Col, Row, Container } from "../../components/Grid";
 import axios from "axios";
 import "./style.css"
 import ReCAPTCHA from "react-google-recaptcha";
-import insta from "../images/insta.png";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
 
 
 let mailer = ()=>{
@@ -13,7 +10,7 @@ let mailer = ()=>{
     alert("Please Fill Out all Fields")
   }
   else{
-  axios.post("/api/contact", {
+  axios.post("/contact", {
     from:"dorlandotech@gmail.com",
     to:"gagedorlando@gmail.com",
     subject:document.getElementById("subject").value,
@@ -63,9 +60,9 @@ function NoMatch() {
         </div>
       </div>
       <div style={{textAlign:"center"}}>
-        <img src={insta} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
-        <img src={linkedin} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
-        <img src={github} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
+        <img src={process.env.PUBLIC_URL+"/assets/images/insta.png"} alt="Insta" onClick={()=>window.location.assign("https://instagram.com/gagedorl")}/>
+        <img src={process.env.PUBLIC_URL+"/assets/images/linkedin.png"} alt="linkedin" onClick={()=>window.location.assign("https://linkedin.com/in/gage-d-orlando-392b61186")} />
+        <img src={process.env.PUBLIC_URL+"/assets/images/github.png"} alt="Github" onClick={()=>window.location.assign("https://github.com/gagedorl")} />
       </div>
     </Container>
   );
