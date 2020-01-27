@@ -15,9 +15,7 @@ const routes = require("./routes")
   app.use('/projects', express.static(frontend));
   app.use('/contact', express.static(frontend));
 // all the unknown requests are redirected to the react SPA
-  app.use(function (req, res, next) {
-    res.sendFile(path.join(frontend, 'index.html'));
-  });
+
   app.use(express.urlencoded({ extended: true }));
 app.listen(PORT, function(){
     console.log(`Now listening on ${PORT}`)
