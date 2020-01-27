@@ -8,7 +8,7 @@ const routes = require("./routes")
   if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
-  app.use("/api",routes)
+  app.use("/",routes)
   const frontend = path.join(__dirname, 'client/build');
 
 // map the requests to the static react build directory
